@@ -88,5 +88,6 @@ It uses Python's `secrets` library which was designed for this
 purpose. The `genpass` script is sufficiently short that experts can
 review it easily.
 
-In general, if you don't know what you're doing, it's best to stick
+In general, when it comes to software security tooling
+and you don't know what you're doing, it's best to stick
 with tools backed by trustworthy and responsible organizations.
