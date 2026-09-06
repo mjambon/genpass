@@ -65,11 +65,21 @@ to log<inf>2</inf>(2) = 1 bit. The extreme cases are:
   systematically the first one, you don't lose any entropy.
 - If your choice is perfectly predictable to an attacker, you lose the
   full bit.
-- If you pick the passphrase that for some reason you like better, you
-  lose probably more than 0 but less than 1 bit.
+
+If you pick the passphrase that for some reason you like better,
+in general you would lose more than 0 but less than 1 bit.
 
 Likewise, if you generate 8 passphrases and you pick the one you like
-best, you lose up to log<inf>2</inf>(8) = 3 × log<inf>2</inf>(2) = 3 bits.
+best, you lose up to log<inf>2</inf>(8) = 3 × log<inf>2</inf>(2) = 3
+bits.
+
+However, if you don't use the password generator at all and rely on
+your brain to generate a passphrase, you make the passphrase much
+easier to guess even it has the right consonant/vowel structure.
+Using your brain is a different process than using the password
+generator and therefore has a different entropy, in fact
+a much lower one. Don't trust your brain to produce random
+symbols, it's pretty bad at it.
 
 ## Is this `genpass` password generator secure?
 
