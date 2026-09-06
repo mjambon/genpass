@@ -35,7 +35,7 @@ in practice? Yes. Is the entropy any different? No.
 
 ## What is a good passphrase length?
 
-tl;dr 80+ bits as of 2026
+tl;dr 80+ bits of entropy as of 2026
 
 Actual password security depends on a bunch of other factors.
 I recommend reading
