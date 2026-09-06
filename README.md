@@ -43,7 +43,7 @@ https://it.physics.gla.ac.uk/notes/security/passwords.
 
 ## How do you calculate entropy for this password generator?
 
-Excellent question. Glad you asked it.
+Excellent question. Glad you asked.
 
 A passphrase is generated as a sequence of "syllables" made of a
 consonant and a vowel. There are 120 syllables to pick from. They're
@@ -56,7 +56,7 @@ corresponds to 12 × log<inf>2</inf>(120) ≃ 82.88 bits of entropy.
 
 Keep in mind that entropy is not in the passphrase but in the process
 that generates the passphrase. So, if you generate two passphrases and
-pick your favorite one, you lose entropy! More precisely, you lose up
+pick the one you prefer, you lose entropy! More precisely, you lose up
 to log<inf>2</inf>(2) = 1 bit. The extreme cases are:
 
 - If you pick among these two passphrases randomly or if you pick
