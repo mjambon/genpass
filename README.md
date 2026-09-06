@@ -21,7 +21,7 @@ theory](https://en.wikipedia.org/wiki/Information_theory),
 is a numeric value expressed in _bits of information_ for a
 _probability distribution_. It means that if an encryption system is
 implemented and deployed properly, it would take close to 2<sup>N</sup>
-attempts to crack a passphrase picked from that distribution.
+attempts to crack a passphrase picked from a distribution of entropy N.
 
 If you want to understand entropy, it is important to realize that
 it's not a property of a passphrase. When we say "this passphrase
