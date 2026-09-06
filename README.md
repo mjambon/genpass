@@ -46,7 +46,9 @@ https://it.physics.gla.ac.uk/notes/security/passwords.
 Excellent question. Glad you asked.
 
 A passphrase is generated as a sequence of "syllables" made of a
-consonant and a vowel. There are 120 syllables to pick from. They're
+consonant and a vowel. There are 120 syllables to pick from because
+they're formed from one of 20 consonants (excluding `y`) and one of
+6 vowels, giving us 20 × 6 = 120 combinations. Successive syllables are
 chosen independently i.e. without trying to form nice-sounding words.
 This gives us an entropy of log<inf>2</inf>(120) bits per syllable which
 is approximately 6.906 bits. Multiply it by the number of syllables
