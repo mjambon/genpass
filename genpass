@@ -1,0 +1,36 @@
+#! /usr/bin/env python
+#
+# Created by Martin Jambon (2026). Released in the Public Domain.
+# https://github.com/mjambon/genpass
+#
+# Generate a random passphrase and show the entropy for different lengths
+#
+# Sample output:
+#
+# papo meve mace refi jyfu poca fory bura jyny tizy zupi duvi qesa noxo lodu
+#   14   28   41   55   69   83   97  111  124  138  152  166  180  193  207 bits
+#
+import secrets
+from math import log2
+
+C = "bcdfghjklmnpqrstvwxz"  # 20
+V = "aeiouy"                # 6
+
+# Length in syllables
+N = 30
+
+password = "".join(
+    secrets.choice(C) + secrets.choice(V)
+    for _ in range(N)
+)
+
+bits_per_pair = log2(len(C) * len(V))
+chunks = [password[i:i+4] for i in range(0, len(password), 4)]
+
+print(" ".join(chunks))
+
+# Print cumulative entropy, aligned under each chunk
+print(" ".join(
+    f"{(i + 1) * 2 * bits_per_pair:4.0f}"
+    for i in range(len(chunks))
+) + " bits")
