@@ -59,7 +59,7 @@ that generates the passphrase. So, if you generate two passphrases and
 pick the one you prefer, you lose entropy! More precisely, you lose up
 to log<inf>2</inf>(2) = 1 bit. The extreme cases are:
 
-- If you pick among these two passphrases randomly or if you pick
+- If you pick among the two passphrases randomly or if you pick
   systematically the first one, you don't lose any entropy.
 - If your choice is perfectly predictable to an attacker, you lose the
   full bit.
